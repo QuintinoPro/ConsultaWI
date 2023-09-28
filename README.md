@@ -1,7 +1,7 @@
 <h1 align="center">Consulta Python</h1>
 
 <p align="center">
- <img src="./Capturar.PNG">
+ <img src="./fundo.jpg">
 </p>
 
 <br>
