@@ -38,7 +38,7 @@ def consultar_dados():
     if rows:
         for row in rows:
             formatted_data = [f"{label}: {value}" for label, value in
-                              zip(['Código BNDES', 'Nome', 'CPF/CNPJ', 'ID Categoria', 'Nome Categoria'], row)]
+                              zip(['Código BNDES', 'Nome', 'CPF/CNPJ', 'ID Categoria', 'Categoria'], row)]
             result_label.setText(result_label.text() + "\n".join(formatted_data) + "\n\n")
     else:
         result_label.setText("Nenhum resultado encontrado.")
@@ -48,7 +48,6 @@ def consultar_dados():
 def clear_input_text():
     input_text.clear()
     result_label.setText("")
-
 
 # Cria a aplicação Qt
 app = QApplication(sys.argv)
